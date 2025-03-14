@@ -62,9 +62,7 @@ export default function Hero() {
         {(isMobile || isMobile === undefined) && (
           <Image
             className="absolute top-0 left-0 object-cover object-left w-full transition z-1"
-            src={
-              "https://images.unsplash.com/photo-1526318896980-cf78c088247c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            }
+            src={bg}
             fill
             onLoad={() => setLoaded(true)}
             priority
