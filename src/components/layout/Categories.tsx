@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import SteamDimsum from "@/public/steamdimsum.png";
-import SteamBakpao from "@/public/steambakpao.png";
-import FrieDimsum from "@/public/friedimsum.png";
-import Frozen from "@/public/frozen.png";
+import SteamDimsum from "@/public/steamdimsum.jpg";
+import SteamBakpao from "@/public/steambakpao.jpg";
+import FrieDimsum from "@/public/friedimsum.jpg";
+import Frozen from "@/public/frozen.jpg";
 import OnigiriImg from "@/public/bento/onigiri.avif";
 import MochiImg from "@/public/bento/mochi.jpg";
 import RamenSVG from "@/public/bento/ramen.svg";
