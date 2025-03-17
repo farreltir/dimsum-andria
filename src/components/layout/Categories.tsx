@@ -33,14 +33,14 @@ export default function Categories({ pb = "md", pt = "md" }: Props) {
       <ScrollAnimated className={clsx(!isMobile && "container container--sm")}>
         <div className="grid gap-2 sm:gap-6 md:gap-2 lg:gap-6 bento">
           <CategoryTile
-            tabId={1}
+            tabId={0}
             title={"Steamed Dimsum"}
             imgSrc={SteamDimsum}
             width={384}
             height={384}
           />
           <CategoryTile
-            tabId={3}
+            tabId={1}
             span={2}
             title={"Steamed Bakpao"}
             imgSrc={SteamBakpao}
@@ -48,14 +48,14 @@ export default function Categories({ pb = "md", pt = "md" }: Props) {
             height={682}
           />
           <CategoryTile
-            tabId={0}
+            tabId={2}
             title={"Fried Dimsum"}
             imgSrc={FrieDimsum}
             width={384}
             height={256}
           />
           <CategoryTile
-            tabId={2}
+            tabId={3}
             title={"Frozen Menu"}
             imgSrc={Frozen}
             width={384}
@@ -64,16 +64,16 @@ export default function Categories({ pb = "md", pt = "md" }: Props) {
           <div className="relative w-full h-full bg-primary-500 text-neutral-100">
             <div className="flex flex-col justify-center h-full mx-auto text-base font-medium sm:text-lg w-fit sm:mx-0 sm:px-4 lg:px-8 xl:px-16 sm:gap-2 md:gap-0 xl:gap-2 xl:text-2xl">
               <Link href={"/menu#menu"} className="hover:underline w-fit">
-                <span onClick={() => setTab(1)}>Steamed Dimsum</span>
+                <span onClick={() => setTab(0)}>Steamed Dimsum</span>
               </Link>
               <Link href={"/menu#menu"} className="hover:underline w-fit">
-                <span onClick={() => setTab(3)}>Steamed Bakpao</span>
+                <span onClick={() => setTab(1)}>Steamed Bakpao</span>
               </Link>
               <Link href={"/menu#menu"} className="hover:underline w-fit">
-                <span onClick={() => setTab(0)}>Fried Dimsum</span>
+                <span onClick={() => setTab(2)}>Fried Dimsum</span>
               </Link>
               <Link href={"/menu#menu"} className="hover:underline w-fit">
-                <span onClick={() => setTab(2)}>Frozen Menu</span>
+                <span onClick={() => setTab(3)}>Frozen Menu</span>
               </Link>
             </div>
             <Image
